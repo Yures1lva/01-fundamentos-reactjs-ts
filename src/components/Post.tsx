@@ -129,7 +129,9 @@ export function Post({post}:Postprops){
                     </button>
                 </footer>
 
-                <div className={styles.commentList}>
+                      
+            </form>
+            <div className={styles.commentList}>
                     {comments.map(comment =>
                         {
                             return <Comment 
@@ -137,8 +139,7 @@ export function Post({post}:Postprops){
                             content={comment} 
                             onDeleteComment={deleteComment} />
                         })}
-                </div>        
-            </form>
+                </div>  
         </article>
     )
 }
